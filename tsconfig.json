@@ -4,8 +4,6 @@
     // File Layout
     "rootDir": ".",
     "outDir": "./dist",
-    "baseUrl": ".",
-
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
@@ -41,7 +39,14 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+    "paths": {
+      "@domain/*": ["./src/domain/*"],
+      "@application/*": ["./src/aplication/*"],
+      "@infrastructure/*": ["./src/infrastructure/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@config/*": ["./src/config/*"]
+    },
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "main.ts"],
   "exclude": ["node_modules", "dist", "tests"],
 }

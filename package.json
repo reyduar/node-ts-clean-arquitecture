@@ -1,16 +1,19 @@
 {
   "name": "node-clean-arch-ts",
   "version": "1.0.0",
+  "type": "module",
   "description": "Clean architecture project in Node with Typescript ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "dev": "tsx main.ts"
   },
   "author": "Reynaldo Ariel Duarte",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^25.6.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.4"
   }
