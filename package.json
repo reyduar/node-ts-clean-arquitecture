@@ -1,0 +1,11 @@
+{
+  "name": "node-clean-arch-ts",
+  "version": "1.0.0",
+  "description": "Clean architecture project in Node with Typescript ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reynaldo Ariel Duarte",
+  "license": "MIT"
+}
