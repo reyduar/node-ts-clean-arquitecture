@@ -6,7 +6,7 @@
     "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "preserve",
     "target": "es2022",
     "types": [],
     // For nodejs:
@@ -48,5 +48,5 @@
     },
   },
   "include": ["src/**/*.ts", "main.ts"],
-  "exclude": ["node_modules", "dist", "tests"],
+  "exclude": ["node_modules", "dist", "tests"]
 }
