@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Clean architecture project in Node with Typescript ",
-  "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx main.ts",
+    "start": "node dist/main.js",
     "test": "vitest run",
-    "dev": "tsx main.ts"
+    "test:watch": "vitest"
   },
   "author": "Reynaldo Ariel Duarte",
   "license": "MIT",
@@ -15,6 +17,10 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.4",
+    "zod": "^4.3.6"
+  },
+  "dependencies": {
+    "fastify": "^5.8.5"
   }
 }
